@@ -3,7 +3,7 @@ pipeline {
         environment {
         ENV_DOCKER = credentials('dockerhub')
         DOCKERIMAGE = "dummy/dummy"
-        EKS_CLUSTER_NAME = "demo-cluster"
+        EKS_CLUSTER_NAME = "sre-lab"
     }
     stages {
         stage('build') {
